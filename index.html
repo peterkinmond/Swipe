@@ -66,6 +66,21 @@
 <a href='#' onclick='slider4.next();return false;'>next</a>
 <br><br>
 
+<h2>Full width with peekout</h2>
+
+<div id='slider5' class='swipe'>
+  <ul>
+    <li style='display:block'><div>1</div></li>
+    <li style='display:none'><div>2</div></li>
+    <li style='display:none'><div>3</div></li>
+    <li style='display:none'><div>4</div></li>
+    <li style='display:none'><div>5</div></li>
+  </ul>
+</div>
+
+<a href='#' onclick='slider5.prev();return false;'>prev</a> 
+<a href='#' onclick='slider5.next();return false;'>next</a>
+<br><br>
 
 <script src='swipe.js'></script>
 <script>
@@ -73,6 +88,10 @@ new Swipe(document.getElementById('slider'));
 new Swipe(document.getElementById('slider2'));
 var slider3 = new Swipe(document.getElementById('slider3'));
 var slider4 = new Swipe(document.getElementById('slider4'));
+var slider5 = new Swipe(document.getElementById('slider5'), 
+  {
+    peekout: 10
+  });
 </script>
 
 </body> 

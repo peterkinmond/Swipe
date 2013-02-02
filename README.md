@@ -39,6 +39,8 @@ Swipe can take an optional second parameter– an object of key/value settings:
 
 - **auto** Integer - begin with auto slideshow (time in milliseconds between slides)
 
+- **peekout** Integer *(default:0)* - percent of next slide that will peek out from right hand side (useful for showing user element can be swiped without using navigation buttons)
+
 -	**callback** Function - runs at the end of any slide change. *(effective for updating position indicators/counters)*
 
 ### Example
@@ -49,6 +51,7 @@ window.mySwipe = new Swipe(document.getElementById('slider'), {
 	startSlide: 2,
 	speed: 400,
     auto: 3000,
+  peekout: 10,
 	callback: function(event, index, elem) {
 
 	  // do something cool
